@@ -1,7 +1,12 @@
 # note-taker
 
 
-An app that allows users to view, create, and delete notes build using Express.
+An app that allows users to view, create, and delete notes built using Express.
+
+[Click here to view the deployed app!](http://mtm-note-taker.herokuapp.com/)
+
+![Screenshot of Note Taker app](https://i.imgur.com/DiYw7Co.png)
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
