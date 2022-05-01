@@ -5,17 +5,6 @@ const uuid = require("uuid");
 
 const port = process.env.PORT || 3001;
 
-if (!fs.existsSync("./db/db.json")) {
-    let notes = [];
-    fs.writeFileSync("./db/db.json", JSON.stringify(notes), function (err) {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("Created db.json");
-        }
-    });
-}
-
 var data = require("./db/db.json");
 
 app.use(express.json());
