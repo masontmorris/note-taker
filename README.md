@@ -1,7 +1,7 @@
-# readme-generator
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# note-taker
 
-An app that generates a professional README file using terminal inputs.
+
+An app that allows users to view, create, and delete notes build using Express.
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -14,23 +14,17 @@ An app that generates a professional README file using terminal inputs.
 
 ## Installation
 
-Install Node, clone app repository from Github, and run 'npm install' in app directory.
+Clone from Github and run server.js in Node, or access page deployed to Heroku.
 <a name="usage"/>
 
 ## Usage
 
-Run index.js in Node and follow terminal prompts.
+Enter note title and note text, then click save button. To view a note's contents, click that note on the left. To delete a note, click the delete button. To create a new note while viewing another, click plus button.
 <a name="license"/>
 
 ## License
 
-Copyright 2022 Mason Morris
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <a name="contributing"/>
 
 ## Contributing
