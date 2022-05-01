@@ -5,9 +5,22 @@ const uuid = require("uuid");
 
 const port = process.env.PORT || 3001;
 
+if (!fs.existsSync("./db/db.json")) {
+    let notes = [];
+    fs.writeFileSync("./db/db.json", JSON.stringify(notes), function (err) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Created db.json");
+        }
+    });
+}
+
 var data = require("./db/db.json");
 
 app.use(express.json());
+
+app.use(express.static("public"));
 
 app.get("/api/notes", function (req, res) {
     res.json(data);
@@ -37,7 +50,7 @@ app.post("/api/notes", function (req, res) {
 });
 
 app.delete("/api/notes", function (req, res) {
-    var noteId = req.body.id;
+    var noteId = req.query.id;
     var noteIndex = data.findIndex((note) => note.id === noteId);
     data.splice(noteIndex, 1);
     fs.writeFile("./db/db.json", JSON.stringify(data), function (err) {
